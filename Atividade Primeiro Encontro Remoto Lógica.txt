@@ -1,0 +1,47 @@
+var listaDePecas = ["Amortecedor", "Motor", "Filtro do Ar","Anel de pistão", "Baterias", "Barra de direção", "Antena", "Arruela", "Buzina", "Engate", "Volante"] // Array
+
+
+// Se a peça possuir um peso superior a 100 gramas pode cadastrar
+
+let peso = 30
+if (peso < 100) {
+
+console.log("A peça analisada deve pesar no mínimo 100g. A sua peça pesa: " + peso + "g")
+    
+} else {
+    
+console.log("A peça analisada tem o peso adequado: " + peso + "g")
+
+}
+
+// Dada a capacidade de cada caixa, caso a lista de peças seja superior a 10, imprima uma mensagem informando não ter capacidade suficiente.
+
+
+if (listaDePecas.length <10) {
+
+    console.log("É possível cadastrar até 10 peças por caixa, sua lista apresenta: " + listaDePecas.length + " itens")
+    
+} else {
+
+    console.log("Exedeu 10 peças por caixa, sua lista tem " + listaDePecas.length + " itens")
+    
+}
+
+
+// Caso a peça tenha um nome com quantidade inferior a 3 caracteres, informe uma mensagem de erro.
+
+
+let nomePeca = "Motor"
+if (nomePeca.length >3) {
+
+    console.log("O nome da peça está adequado para o cadastro, pois tem mais de 3 caracteres: " + nomePeca)
+
+} else if (nomePeca.length == 0){
+
+    console.log ("O nome da peça não pode ser vazio!")
+
+} else{
+
+    console.log("O nome de peça inválido, pois deve ter mais de 3 caracteres: " + nomePeca + " Digite novamente um nome adequado! ")
+
+}
